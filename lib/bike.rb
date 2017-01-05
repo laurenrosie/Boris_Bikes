@@ -3,13 +3,9 @@ class Bike
     @docked = docked
     @working = working
   end
-  def working?
-    @working
-  end
-  def docked=(new_dock_status)
-    @docked = new_dock_status
-  end
-  def docked?
-    @docked
-  end
+
+  attr_reader :working
+  attr_reader :docked
+  attr_writer :docked
+
 end

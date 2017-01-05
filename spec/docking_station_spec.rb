@@ -9,7 +9,7 @@ describe DockingStation do
 
   it 'expects bike to be working' do
     #does release bike expect the bike to be working
-    expect(DockingStation.new.release_bike.working?).to eq(true)
+    expect(DockingStation.new.release_bike.working).to eq(true)
   end
 
     it{is_expected.to respond_to(:dock)}
