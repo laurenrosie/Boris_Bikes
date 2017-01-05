@@ -5,7 +5,6 @@ class Bike
   end
 
   attr_reader :working
-  attr_reader :docked
-  attr_writer :docked
+  attr_accessor :docked
 
 end
